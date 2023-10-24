@@ -150,8 +150,7 @@
 }
 
 .card__image-block {
-  min-width: 371px;
-  min-height: 371px;
+  min-height: 300px;
   position: relative;
   aspect-ratio: 1/1;
 }
@@ -297,7 +296,6 @@
   fill: var(--heart-color);
   animation: like 0.3s ease-in 0.1s alternate;
   transform-origin: center;
-  fill: var(--heart-color);
 }
 
 .like-icon.is-liked .main-body {
