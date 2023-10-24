@@ -164,7 +164,7 @@
   object-position: center;
 }
 
-.gray-scale{
+.gray-scale {
   filter: grayscale(0.8);
 }
 
@@ -297,6 +297,7 @@
   fill: var(--heart-color);
   animation: like 0.3s ease-in 0.1s alternate;
   transform-origin: center;
+  fill: var(--heart-color);
 }
 
 .like-icon.is-liked .main-body {
@@ -308,7 +309,7 @@
 }
 
 @keyframes like {
-  from { 
+  from {
     transform: scale(1);
   }
   to {
@@ -331,10 +332,6 @@
   to {
     opacity: 1;
   }
-}
-
-.like-icon.is-liked .heart {
-  fill: var(--heart-color);
 }
 
 .card__like-button {
