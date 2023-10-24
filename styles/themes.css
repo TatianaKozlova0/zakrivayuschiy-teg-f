@@ -4,3 +4,68 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+    --font-color: #00CC14;
+    --main-fw: 465;
+    --bold-fw: 785;
+    --bg-color: #000;
+    --bg-gradient:
+        repeating-linear-gradient(0deg, #000 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(90deg, #000 0px 2px, transparent 2px 4px),
+        linear-gradient(180deg, #007F0C 0%, #004306 100%);
+    --text-stroke: 1px #000;
+    --text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    --button-dif: #00CC14;
+    --heart-contour: #00CC14;
+    
+}
+
+:root.theme-light {
+    --font-color: #000;
+    --main-fw: 400;
+    --bold-fw: 700;
+    --bg-color: #fff;
+    --bg-gradient: 
+        repeating-linear-gradient(0deg, #d3d3d3 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px),
+        linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);  
+    --text-stroke: 1px #fff;  
+    --text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    --button-dif: #fff;
+    --heart-contour: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-color: #00CC14;
+        --main-fw: 465;
+        --bold-fw: 785;
+        --bg-color: #000;
+        --bg-gradient:
+        repeating-linear-gradient(0deg, #000 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(90deg, #000 0px 2px, transparent 2px 4px),
+        linear-gradient(180deg, #007F0C 0%, #004306 100%);
+        --text-stroke: 1px #000;
+        --text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+        --button-dif: #00CC14;
+        --heart-contour: #00CC14;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --font-color: #000;
+        --main-fw: 400;
+        --bold-fw: 700;
+        --bg-color: #fff;
+        --bg-gradient: 
+        repeating-linear-gradient(0deg, #d3d3d3 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px),
+        linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+        --text-stroke: 1px #fff;  
+        --text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+        --button-dif: #fff;
+        --heart-contour: #000;
+    }
+}
