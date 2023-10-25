@@ -347,6 +347,7 @@
   font-size: 14px;
   font-family: var(--accent-font);
   color: var(--font-color);
+  align-self: center;
 }
 
 .card__like-button:hover .button__text,
@@ -395,10 +396,6 @@
     inline-size: 28px;
     block-size: 28px;
   }
-}
-
-.button__text {
-  align-self: center;
 }
 
 .dialog {
